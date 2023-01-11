@@ -19,14 +19,14 @@ Your landing page should give potential customers an idea of:
 
 - [x] See good quality pictures of the product to help me make a decision about buying it.
 - [x] Be given information about the overall product and it’s features.
-- Browse your website on mobile, tablet, and desktop devices
-- Click to navigate to different sections of your webpage
-- Visit your website at a publicly accessible domain name
+- [x] Browse your website on mobile, tablet, and desktop devices
+- [x] Click to navigate to different sections of your webpage
+- [x] Visit your website at a publicly accessible domain name
 
 **Stretch Goals:**
 
-- Have a button that allows you to add the product to the basket.
-- Have a visual indication that something has been added to your basket.
-- Hear my screen reader describe the content on your website.
+- [x] Have a button that allows you to add the product to the basket.
+- [x] Have a visual indication that something has been added to your basket.
+- [x] Hear my screen reader describe the content on your website.
 
 Below are a few examples of what we are looking for.
