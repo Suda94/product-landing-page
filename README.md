@@ -4,10 +4,10 @@ Your `first challenge` for the next couple of weeks is to build a **product land
 
 Your landing page should give potential customers an idea of:
 
-- What the product is?
-- What are the features that make this product better than something generic?
-- How much does it cost?
-- How they can buy it?
+- []What the product is?
+- []What are the features that make this product better than something generic?
+- []How much does it cost?
+- [] How they can buy it?
 
 ## User Stories
 
@@ -17,7 +17,7 @@ Your landing page should give potential customers an idea of:
 
 **As a potential customer, I want to:**
 
-- See good quality pictures of the product to help me make a decision about buying it.
+- []See good quality pictures of the product to help me make a decision about buying it.
 - Be given information about the overall product and it’s features.
 - Browse your website on mobile, tablet, and desktop devices
 - Click to navigate to different sections of your webpage
