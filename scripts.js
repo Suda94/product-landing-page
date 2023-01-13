@@ -1,0 +1,1 @@
+document.querySelector("#design > div > div > div:nth-child(3) > div.tabular-module-content-inner.show > div.content-container > div.cloudimage-360.initialized")
