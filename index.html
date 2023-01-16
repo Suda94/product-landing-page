@@ -11,6 +11,8 @@
 
 <body>
     <section>
+        <div class="circle"></div>
+
         <header>
             <a href="#"><img src="IMAGES/honda-4-logo-png-transparent.png" alt="honda logo" class="logo"></a>
             <ul>
@@ -21,26 +23,84 @@
 
             </ul>
         </header>
+
+
+
         <div class="content">
             <div class="textBox">
-                <h2>Experience the feeling<br> of<span> Honda Engineering</span></h2>
+                <h2>Experience the feeling<br> of all new<span> Honda Civic type R</span></h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit ut iure delectus amet
                     molestiae rerum minima sit iste ad aliquid accusamus veniam quasi quas, mollitia laborum illo
                     aliquam veritatis! </p>
-                <a href="#">Find More!</a>
+                <a href="#" class="">Find More!</a>
             </div>
             <div class="imgBox">
                 <img src="IMAGES/Honda-Civic-Type-R-PNG-File.png" class="honda">
             </div>
         </div>
-        <ul class="thumb">
-            <li><img src="IMAGES/jazz.png">
-                <details>jazz</details>
-            </li>
-            <li><img src="IMAGES/crv.png"></li>
-            <li><img src="IMAGES/Honda-e.png"></li>
-            <li><img src="IMAGES/pngwing.com.png"></li>
-        </ul>
+
+
+        <!-- slideshow images of the car -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="IMAGES/Honda-Civic-10-5-doors-c110614-57.jpg" class="promo">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="IMAGES/80-honda-civic-type-r-2020-press-interior.JPG" class="promo">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="IMAGES/type-r-three-color-range.jpeg" class="promo">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+
+        <div class="performance">
+            <ul class="thumb">
+                <li>
+                    <img src="IMAGES/c2_r.png">
+                    <h1>Impressive power</h1>
+                    <span>Featuring a two litre, four-cylinder VTEC TURBO engine, which develops a maximum power output
+                        of 329PS and 420Nm of torque.</span>
+                </li>
+                <li><img src="IMAGES/c2_r (1).png">
+                    <h1>Powerful performance</h1>
+                    <span>The Type R can accelerate from 0-100km/h in 5.4 seconds.</span>
+                </li>
+                <li><img src="IMAGES/c2_r (2).png">
+                    <h1>Type R transmission</h1>
+                    <span>Featuring a two litre, four-cylinder VTEC TURBO engine, which develops a maximum power output
+                        of 329PS and 420Nm of torque.</span>
+                </li>
+                <li><img src="IMAGES/c2_r (3).png">
+                    <h1>Record-breaking speed</h1>
+                    <span><em>2’23”:</em> the Type R is the fastest front-wheel drive car to have driven the legendary
+                        5.8km Suzuka circuit.</span>
+                </li>
+
+            </ul>
+        </div>
         <ul class="sci">
             <li><a href="#"><img src="IMAGES/Facebook-logo-blue-circle-large-transparent-png.png"></a></li>
             <li><a href="#"><img src="IMAGES/Twitter-logo-png-1.png"></a></li>
