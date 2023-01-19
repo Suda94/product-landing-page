@@ -105,7 +105,8 @@ header ul li a ::before {
 .thumb {
   position: absolute;
   left: 50%;
-  top: 1300px;
+  top: 800px;
+  padding-bottom: 100px;
   transform: translateX(-50%);
   display: flex;
 }
@@ -115,6 +116,7 @@ header ul li a ::before {
   margin: 0 60px;
   cursor: pointer;
   transition: 0.5s;
+  box-shadow: 10px 10px rgb(146, 143, 143), -2px -2px rgb(219, 218, 218);
 }
 .thumb li:hover {
   transform: translateY(-15px);
@@ -123,10 +125,37 @@ header ul li a ::before {
 .thumb li img {
   max-width: 200px;
 }
+.thumb li span {
+  margin: px;
+}
+
+/* profiles images  */
+.profiles {
+  position: absolute;
+  left: 50%;
+  top: 600px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.profiles li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.profiles li:hover {
+  transform: translateY(-15px);
+}
+
+.profiles li img {
+  max-width: 250px;
+}
 
 .thumb li details {
   list-style-type: none;
 }
+
 .sci {
   position: absolute;
   top: 50%;
@@ -137,6 +166,7 @@ header ul li a ::before {
   align-items: center;
   flex-direction: column;
 }
+
 .sci li {
   list-style: none;
 }
@@ -158,97 +188,4 @@ header ul li a ::before {
   height: 100%;
   background: #d10e0e;
   clip-path: circle(600px at right);
-}
-
-.slideshow {
-  position: absolute;
-  display: flex;
-  top: 1000px;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
