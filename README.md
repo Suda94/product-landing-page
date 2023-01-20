@@ -30,3 +30,5 @@ Your landing page should give potential customers an idea of:
 - [x] Hear my screen reader describe the content on your website.
 
 Below are a few examples of what we are looking for.
+
+
