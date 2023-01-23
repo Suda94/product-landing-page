@@ -124,6 +124,7 @@ header ul li a ::before {
 
 .thumb li img {
   max-width: 200px;
+  display: flex;
 }
 .thumb li span {
   margin: px;
