@@ -150,7 +150,7 @@ header ul li a ::before {
 }
 
 .profiles li img {
-  max-width: 250px;
+  max-width: 100px;
 }
 
 .thumb li details {
@@ -175,6 +175,7 @@ header ul li a ::before {
   display: inline-block;
   margin: 5px 0;
   transform: scale(0.6);
+  filter: invert(1);
 }
 
 .sci img {
@@ -189,4 +190,31 @@ header ul li a ::before {
   height: 100%;
   background: #d10e0e;
   clip-path: circle(600px at right);
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+  header .logo {
+    max-width: 60px;
+  }
+  header ul {
+    display: none;
+  }
+
+  section {
+    padding: 20px;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .content .textBox h2 span {
+    color: black;
+    font-size: 2.5rem;
+  }
+  .content .textBox {
+    max-width: 100%;
+  }
 }
