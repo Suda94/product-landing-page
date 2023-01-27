@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product landing page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,8 +15,8 @@
 
         <header>
             <a href="#"><img src="IMAGES/honda-4-logo-png-transparent.png" alt="honda logo" class="logo"></a>
-            <div class="toggle"></div>
-            <ul>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Used</a></li>
                 <li><a href="#">Engine Room</a></li>
@@ -30,10 +30,9 @@
         <div class="content">
             <div class="textBox">
                 <h2>Experience the feeling<br> of all new<span> Honda Civic type R</span></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, suscipit ut iure delectus amet
-                    molestiae rerum minima sit iste ad aliquid accusamus veniam quasi quas, mollitia laborum illo
-                    aliquam veritatis! </p>
-                <a href="#" class="">Find More!</a>
+                <p>Designed to be the fastest front-wheel-drive car in the world, get ready for the most exhilarating
+                    drive of your life. </p>
+                <button type="menu" class="pop-up">BOOK NOW</button>
             </div>
             <div class="imgBox">
                 <img src="Honda0.png" class="honda">
@@ -54,6 +53,11 @@
                 </li>
             </ul>
         </div>
+
+        <!-- <div class="trailer">
+        <iframe src=""> </iframe>
+    
+        </div> -->
 
 
 
@@ -92,6 +96,8 @@
             <li><a href="#"><img src="IMAGES/github-mark-white.png"></a></li>
         </ul>
     </section>
+    //how to add footer with popp up bar?
+
 </body>
 <script src="scripts.js"></script>
 
