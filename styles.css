@@ -10,7 +10,7 @@
 
 section {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   padding: 100px;
   display: flex;
@@ -79,7 +79,7 @@ header ul li a ::before {
   padding-top: 1rem;
   color: rgb(2, 2, 2);
 }
-.content .textBox a {
+.content .textBox button {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
@@ -91,7 +91,7 @@ header ul li a ::before {
   text-decoration: none;
 }
 .content .imgBox {
-  width: 600px;
+  max-width: 600px;
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
@@ -136,11 +136,11 @@ header ul li a ::before {
   left: 50%;
   top: 600px;
   transform: translateX(-50%);
-  display: flex;
+  display: inline-flex;
 }
 .profiles li {
   list-style: none;
-  display: inline-block;
+  display: flex;
   margin: 0 30px;
   cursor: pointer;
   transition: 0.5s;
@@ -187,7 +187,7 @@ header ul li a ::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: #d10e0e;
   clip-path: circle(600px at right);
 }
@@ -211,7 +211,30 @@ header ul li a ::before {
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 11;
   }
+
+  .toggle.active {
+    background: url(IMAGES/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #d10e0e;
+    z-index: 10;
+  }
+
   section {
     padding: 20px 20px 120px;
   }
@@ -219,12 +242,18 @@ header ul li a ::before {
     flex-direction: column;
     margin-top: 100px;
   }
-  .content .textBox h2 p span {
+  .content .textBox h2 span {
     font-size: 2.5rem;
     margin-bottom: 15px;
   }
+  .content .textBox p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
   .content .textBox h2 span {
-    color: rgb(131, 30, 30);
+    color: rgb(255, 255, 255);
   }
   .content .textBox {
     max-width: 100%;
@@ -249,6 +278,11 @@ header ul li a ::before {
     transform: translateX(-50%);
     margin-top: 10px;
   }
+
+  ul.thumb {
+    max-width: 100%;
+    margin-top: 200px;
+  }
   .thumb li {
     margin-top: 40px;
     margin-bottom: 10px;
@@ -256,16 +290,25 @@ header ul li a ::before {
 
   .profiles {
     position: absolute;
+    left: 40%;
+    top: 709px;
     transform: translateX(-50%);
-    display: flex;
   }
-  .profiles img {
-    max-width: 10px;
-    padding: 5px 5px 5px 5px;
+
+  ul.profiles {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .profiles li img {
+    max-width: 200px;
   }
 
   .circle {
-    clip-path: circle(300px at center bottom);
+    position: absolute;
+    clip-path: square(300px at center bottom);
+    background: #d10e0e;
   }
   .sci {
     background-color: rgb(255, 0, 0);
@@ -275,6 +318,6 @@ header ul li a ::before {
     border-bottom-left-radius: 5rem;
   }
   .thumb .profiles.circle {
-    margin-inline: 300px;
+    gap: 5px;
   }
 }
