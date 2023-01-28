@@ -1,11 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple);
 
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "shadow-multiple", sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 section {
@@ -102,18 +112,24 @@ header ul li a ::before {
   max-width: 500px;
 }
 
-.thumb {
-  position: absolute;
-  left: 50%;
-  top: 800px;
+.content.thumb {
+  position: relative;
+  display: flex;
+  margin-top: 1000px;
   padding-bottom: 100px;
   transform: translateX(-50%);
-  display: flex;
 }
+
+ul.thumb {
+  position: relative;
+  display: flex;
+  margin-top: 500px;
+  row-gap: 30px;
+}
+
 .thumb li {
   list-style: none;
-  display: inline-block;
-  margin: 0 60px;
+  margin: 0;
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 10px 10px rgb(146, 143, 143), -2px -2px rgb(219, 218, 218);
@@ -123,14 +139,12 @@ header ul li a ::before {
 }
 
 .thumb li img {
-  max-width: 200px;
+  position: relative;
+  max-width: 100%;
   display: flex;
 }
-.thumb li span {
-  margin: px;
-}
 
-/* profiles images  */
+/* car profiles images  */
 .profiles {
   position: absolute;
   left: 50%;
@@ -153,10 +167,7 @@ header ul li a ::before {
   max-width: 100px;
 }
 
-.thumb li details {
-  list-style-type: none;
-}
-
+/*social media icon styles  */
 .sci {
   position: absolute;
   top: 50%;
@@ -192,7 +203,22 @@ header ul li a ::before {
   clip-path: circle(600px at right);
 }
 
+footer ul {
+  margin-top: auto;
+}
+footer li {
+  display: inline-block;
+  margin: 0.7em;
+}
+
+footer li a {
+  color: rgb(8, 6, 6);
+  font-size: 00.9em;
+  text-decoration: underline;
+}
+
 @media (max-width: 991px) {
+  /* header  */
   header {
     padding: 20px;
   }
@@ -215,6 +241,9 @@ header ul li a ::before {
   }
 
   .toggle.active {
+    position: fixed;
+    right: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     background: url(IMAGES/close.png);
     background-size: 25px;
     background-position: center;
@@ -235,6 +264,7 @@ header ul li a ::before {
     z-index: 10;
   }
 
+  /* section */
   section {
     padding: 20px 20px 120px;
   }
@@ -316,8 +346,5 @@ header ul li a ::before {
     width: 50px;
     border-top-left-radius: 5rem;
     border-bottom-left-radius: 5rem;
-  }
-  .thumb .profiles.circle {
-    gap: 5px;
   }
 }
