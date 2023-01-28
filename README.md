@@ -29,6 +29,4 @@ Your landing page should give potential customers an idea of:
 - [x] Have a visual indication that something has been added to your basket.
 - [x] Hear my screen reader describe the content on your website.
 
-Below are a few examples of what we are looking for.
-
 
