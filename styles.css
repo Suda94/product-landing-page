@@ -19,7 +19,7 @@ body {
 }
 
 section {
-  position: relative;
+  position: absolute;
   max-width: 100%;
   min-height: 100vh;
   padding: 100px;
