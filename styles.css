@@ -115,16 +115,15 @@ header ul li a ::before {
 .content.thumb {
   position: relative;
   display: flex;
-  margin-top: 1000px;
   padding-bottom: 100px;
   transform: translateX(-50%);
 }
 
 .thumb {
-  position: relative;
-  display: flex;
-  margin-top: 500px;
-  row-gap: 30px;
+  position: absolute;
+  display: inline-flex;
+  margin-top: 80em;
+  gap: 5rem;
 }
 
 .thumb li {
@@ -145,17 +144,14 @@ header ul li a ::before {
 
 /* car profiles images  */
 /* 
-.content.profile{
- 
-
-
 } */
 .profiles {
   position: absolute;
   left: 50%;
-  top: 600px;
+  top: 30em;
   transform: translateX(-50%);
-  display: inline;
+  display: inline-flex;
+  gap: 5rem;
 }
 .profiles li {
   list-style: none;
@@ -169,19 +165,20 @@ header ul li a ::before {
 }
 
 .profiles li img {
-  max-width: 100px;
+  max-width: 10em;
 }
 
 /*social media icon styles  */
 .sci {
-  position: relative;
+  position: fixed;
   top: 50%;
-  right: 30px;
+  right: 0.2rem;
   transform: translateY(-50%);
-  display: flex;
+  display: inline;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: rgb(85, 42, 42);
 }
 
 .sci li {
@@ -189,13 +186,13 @@ header ul li a ::before {
 }
 .sci li a {
   display: inline-block;
-  margin: 5px 0;
+  margin: 0.5px 0;
   transform: scale(0.6);
   filter: invert(1);
 }
 
 .sci img {
-  max-width: 40px;
+  max-width: 2rem;
 }
 
 .circle {
@@ -208,8 +205,14 @@ header ul li a ::before {
   clip-path: circle(600px at right);
 }
 
+.video {
+  display: flex;
+  position: absolute;
+  top: 70em;
+}
+
 footer {
-  margin-top: 20em;
+  margin-top: 90em;
   text-align: center;
 }
 footer li {
@@ -309,7 +312,7 @@ footer li a {
     justify-content: center;
     flex-wrap: wrap;
     left: 50%;
-    top: 800px;
+    top: 80em;
     padding-bottom: 100px;
     transform: translateX(-50%);
     margin-top: 10px;
@@ -323,18 +326,13 @@ footer li a {
   .profiles {
     position: absolute;
     left: 40%;
-    top: 709px;
+    top: 100%;
     transform: translateX(-50%);
   }
 
-  ul.profiles {
-    margin-top: 20px;
-    flex-direction: column;
-    gap: 40px;
-  }
-
   .profiles li img {
-    max-width: 200px;
+    max-width: 5rem;
+    flex-direction: row;
   }
 
   .circle {
@@ -348,5 +346,20 @@ footer li a {
     width: 50px;
     border-top-left-radius: 5rem;
     border-bottom-left-radius: 5rem;
+  }
+
+  footer {
+    margin-top: 190em;
+    text-align: center;
+  }
+  footer li {
+    display: inline-block;
+    margin: 0.7em;
+  }
+
+  footer li a {
+    color: rgb(8, 6, 6);
+    font-size: 00.9em;
+    text-decoration: underline;
   }
 }
