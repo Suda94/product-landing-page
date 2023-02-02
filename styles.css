@@ -7,7 +7,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: grid;
   font-family: "shadow-multiple", sans-serif;
   scroll-behavior: smooth;
 }
@@ -208,12 +208,23 @@ header ul li a ::before {
 .video {
   display: flex;
   position: absolute;
-  top: 60em;
-  max-width: 100%;
+  top: 60rem;
+  left: 15%;
+  right: 15%;
+  color: black;
 }
 
 .video iframe {
   max-width: 100%;
+  min-height: 30em;
+}
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d10e0e;
+  clip-path: color(600px at right);
 }
 
 footer {
@@ -351,6 +362,20 @@ footer li a {
     width: 50px;
     border-top-left-radius: 5rem;
     border-bottom-left-radius: 5rem;
+  }
+
+  .video {
+    display: flex;
+    position: absolute;
+    top: 45rem;
+    left: 10%;
+    right: 10%;
+    color: black;
+  }
+
+  .video iframe {
+    max-width: 100%;
+    min-height: 10em;
   }
 
   footer {
