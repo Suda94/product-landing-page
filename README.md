@@ -7,7 +7,7 @@ Your landing page should give potential customers an idea of:
 - [x] What the product is?
 - [x] What are the features that make this product better than something generic?
 - [x] How much does it cost?
-- [x] How they can buy it?
+- [ ] How they can buy it?
 
 ## User Stories
 
@@ -20,7 +20,7 @@ Your landing page should give potential customers an idea of:
 - [x] See good quality pictures of the product to help me make a decision about buying it.
 - [x] Be given information about the overall product and it’s features.
 - [x] Browse your website on mobile, tablet, and desktop devices
-- [x] Click to navigate to different sections of your webpage
+- [ ] Click to navigate to different sections of your webpage
 - [x] Visit your website at a publicly accessible domain name
 
 **Stretch Goals:**
