@@ -41,7 +41,7 @@ header {
 }
 header .logo {
   position: relative;
-  width: 150px;
+  width: 5rem;
 }
 header ul {
   position: relative;
@@ -214,7 +214,7 @@ header ul li a ::before {
   color: black;
 }
 
-.video iframe {
+.video video {
   max-width: 100%;
   min-height: 30em;
 }
@@ -228,7 +228,7 @@ header ul li a ::before {
 }
 
 footer {
-  margin-top: 90em;
+  margin-top: 70em;
   text-align: center;
 }
 footer li {
