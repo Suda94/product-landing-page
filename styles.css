@@ -32,7 +32,7 @@ header {
   position: absolute;
   top: 0.5rem;
   left: 0;
-  width: 100%;
+  width: 92%;
   padding: 0px 50px;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ header {
 }
 header .logo {
   position: relative;
-  width: 5rem;
+  max-width: 5rem;
 }
 header ul {
   position: relative;
@@ -54,13 +54,18 @@ header ul li a {
   display: inline-block;
   color: rgb(255, 255, 255);
   font-weight: 400;
-  margin-left: 40px;
+  margin-left: 2rem;
   text-decoration: none;
 }
 header ul li a ::before {
-  border-radius: 0rem;
+  border-radius: 1rem;
   background: rgb(8, 7, 6);
 }
+
+header ul li a:hover {
+  color: #d10e0e;
+}
+
 .content {
   position: relative;
   width: 100%;
@@ -219,16 +224,8 @@ header ul li a ::before {
   min-height: 30em;
 }
 
-.rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #d10e0e;
-  clip-path: color(600px at right);
-}
-
 footer {
-  margin-top: 70em;
+  margin-top: 55em;
   text-align: center;
 }
 footer li {
@@ -340,15 +337,7 @@ footer li a {
   }
 
   .profiles {
-    position: absolute;
-    left: 40%;
-    top: 100%;
-    transform: translateX(-50%);
-  }
-
-  .profiles li img {
-    max-width: 5rem;
-    flex-direction: row;
+    display: none;
   }
 
   .circle {
