@@ -7,7 +7,7 @@ Your landing page should give potential customers an idea of:
 - [x] What the product is?
 - [x] What are the features that make this product better than something generic?
 - [x] How much does it cost?
-- [ ] How they can buy it?
+- [x] How they can buy it?
 
 ## User Stories
 
